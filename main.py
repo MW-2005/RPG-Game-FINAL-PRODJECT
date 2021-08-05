@@ -5,7 +5,7 @@ import shops
 
 name = input('Enter your characters name: ')
 
-money = 200000
+money = 2000
 
 gender = ''
 while gender.lower() != 'boy' and gender.lower() != 'girl':
@@ -77,15 +77,34 @@ print('2). Pet shop')
 
 print()
 #you can just make this input a print
-print('Do you want to go to shop 1 or 2?  ')
+print('Do you want to go to the clothing shop? ')
+answer = input ('>> (yes, no): ')
+
+if answer == 'yes':
+    money = shops.clothing(money)
 
 
-answer = input ('>')
+print('Do you want to go to the pet shop? ')
+answer = input ('>> (yes, no): ')
+
+if answer == 'yes':
+    money = shops.pet_shop(money)
+
+# Instead of asking if they want to go to shop 1 or 2
+# Ask first --> If they want to visit the clothing
+#   if yes, then go to clothing shop
+#   else, do nothing
+# Ask second --> if they want to visit the pet shop
+#   if yes, then go to pet shop
+#   else, do nothing
+
+
+print()
+print()
 
 
 
 #also how woold i subtract the price from the original amount of money
-
 
 
 #do i have to make the price of whwt they are buying into a variable
@@ -95,18 +114,6 @@ answer = input ('>')
 #for example, if they select the dog (response == "D"), you subtract 150 (money = money-150)
 #i'll be back in a moment!!
 
-
-
-#if input is equal to "1", go to the clothes
-if answer == '1':
-    shops.clothing()
-        #this should be in your shops file
-        
-        
-
-#if input is equal to "2", go to the pet shop
-if answer == '2':
-    shops.pet_shop()
             
 
 print(Style.RESET_ALL) # Reset Style after finished.

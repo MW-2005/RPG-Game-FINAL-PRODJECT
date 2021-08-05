@@ -8,16 +8,27 @@
 # great
 
 
-def clothing():
-    def buy_clothing():
+def clothing(money):
+    def buy_clothing(money):
 
         print('FC >> Fur Coat - 100gc')
         print('FBS >> Full Body Suit - 300gc')
         print('SR >> Silk Robes - 20gc')
 
-
-
         Response = input('What do you want to buy?  ')
+       
+        if Response.upper() == 'FC':
+            money = money - 100
+
+        if Response.upper() == 'FBS':
+            money = money - 300
+
+        if Response.upper() == 'SR':
+            money = money - 20
+        
+        
+        print('You have', money, 'gold coins left.')
+        return money
 
     def conversation():
         print(
@@ -25,7 +36,7 @@ def clothing():
         )
 
     def Exit():
-        return
+        return 
 
     print('Welcome to the Clothing shop!')
     print('B --> Buy Clothing'
@@ -39,7 +50,8 @@ def clothing():
 
     #check to see if response == "B"
     if response.upper() == 'B':
-      buy_clothing()
+      money = buy_clothing(money)
+      return money
 
     elif response.upper() =='C':
       conversation()
@@ -52,13 +64,28 @@ def clothing():
     #i'll be back tomorrow to help you more if you need it!
 
 
-def pet_shop():
-    def buy_pets():
+def pet_shop(money):
+    def buy_pets(money):
         print('D >> Dog - 150gc')
         print('BP >> Baby Pig - 150gc')
         print('C >> Cat - 150gc')
 
         Response = input('What do you want to buy?  ')
+       
+        if Response.upper() == 'D':
+            money = money - 150
+
+        if Response.upper() == 'BP':
+            money = money - 150
+
+        if Response.upper() == 'C':
+            money = money - 150
+        
+        
+        print('You have', money, 'gold coins left.')
+        return money
+
+
 
     print('Welcome to the Pet shop!')
     print('B --> Buy Pets'
@@ -71,15 +98,14 @@ def pet_shop():
     response = input('What will you do? ')
 
 
-    buy_pets()
+    buy_pets(money)
 
 def Exit():
     return
 
 def conversation():
     print(
-        'You know pets don\'t realy do much but there nice to have tag along on your journey'
-
-            )
+        'You know pets don\'t realy do much okay they dont do anything at all but there nice to have tag along on your journey'
+        )
 
     
