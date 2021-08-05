@@ -1,0 +1,24 @@
+('King' if gender == 'boy' else 'Queen') + '')
+
+
+        shop idea
+print('Where do you want to go ? (1 or 2 or 3)')
+print('1). Armory.')
+print('2). Special items store.')
+print('3). Food store.')
+
+
+  if answer == '1':
+    # 
+  elif answer == '2':
+    # 
+  else answer ==  '3':
+    # 
+
+
+
+
+
+        coneversation with ???
+
+
