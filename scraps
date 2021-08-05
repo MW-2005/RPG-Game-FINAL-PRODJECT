@@ -15,10 +15,24 @@ print('3). Food store.')
   else answer ==  '3':
     # 
 
+  coneversation with ???
+
+also how woold i subtract the price from the original amount of money
+
+ Instead of asking if they want to go to shop 1 or 2
+ Ask first --> If they want to visit the clothing
+   if yes, then go to clothing shop
+   else, do nothing
+ Ask second --> if they want to visit the pet shop
+   if yes, then go to pet shop
+   else, do nothing
 
 
 
+do i have to make the price of whwt they are buying into a variable
 
-        coneversation with ???
+no, you don't have to, but the amount you subtract depends on their selection
+
+for example, if they select the dog (response == "D"), you subtract 150 (money = money-150)
 
 

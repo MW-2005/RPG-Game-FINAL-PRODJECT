@@ -5,7 +5,7 @@ import shops
 
 name = input('Enter your characters name: ')
 
-money = 2000
+money = 900
 
 gender = ''
 while gender.lower() != 'boy' and gender.lower() != 'girl':
@@ -80,23 +80,16 @@ print()
 print('Do you want to go to the clothing shop? ')
 answer = input ('>> (yes, no): ')
 
-if answer == 'yes':
+if answer.lower() == 'yes':
     money = shops.clothing(money)
 
 
 print('Do you want to go to the pet shop? ')
 answer = input ('>> (yes, no): ')
 
-if answer == 'yes':
+if answer.lower() == 'yes':
     money = shops.pet_shop(money)
 
-# Instead of asking if they want to go to shop 1 or 2
-# Ask first --> If they want to visit the clothing
-#   if yes, then go to clothing shop
-#   else, do nothing
-# Ask second --> if they want to visit the pet shop
-#   if yes, then go to pet shop
-#   else, do nothing
 
 
 print()
@@ -104,16 +97,40 @@ print()
 
 
 
-#also how woold i subtract the price from the original amount of money
+print(Fore.GREEN + text.Chap1_text_2)
+
+print()
+
+print(Fore.RED + 'END OF CHAPTER 1')
+input('Click enter to continue to chapter 2')            
+system('clear')
 
 
-#do i have to make the price of whwt they are buying into a variable
 
-#no, you don't have to, but the amount you subtract depends on their selection
+################### CHAPTER 2 #######################
 
-#for example, if they select the dog (response == "D"), you subtract 150 (money = money-150)
-#i'll be back in a moment!!
 
-            
+
+print(Fore.RED + 'CHAPTER 2')
+print()
+print()
+
+
+print (Fore.GREEN + text.Chap2_text_1)
+print()
+
+input(Fore.WHITE +'click enter to continue')
+print()
+
+
+print (Fore.GREEN + text.Chap2_text_2)
+print()
+
+
+input(Fore.WHITE +'click enter to continue')
+print()
+
+
+
 
 print(Style.RESET_ALL) # Reset Style after finished.

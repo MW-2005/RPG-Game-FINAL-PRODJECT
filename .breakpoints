@@ -1,17 +1,11 @@
 {
   "files": {
-    "main.py": [
+    "shops.py": [
       {
-        "id": "a3e2fce3-f6fe-4432-9acd-668e28c47812",
-        "line": 87,
-        "version": 3081,
-        "index": 1500
-      },
-      {
-        "id": "1e2e2e60-a87a-4b43-ab03-2462047256f4",
-        "line": 93,
-        "version": 3180,
-        "index": 1601
+        "id": "616b0df2-979d-4e6d-912b-ed62c935c71b",
+        "line": 4,
+        "version": 2585,
+        "index": 62
       }
     ]
   }

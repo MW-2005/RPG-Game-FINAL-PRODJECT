@@ -1,3 +1,9 @@
+from colorama import Fore, Back, Style
+from os import system
+
+
+
+
 # buy
 #   --> get info about item
 # sell
@@ -15,6 +21,7 @@ def clothing(money):
         print('FBS >> Full Body Suit - 300gc')
         print('SR >> Silk Robes - 20gc')
 
+        print()
         Response = input('What do you want to buy?  ')
        
         if Response.upper() == 'FC':
@@ -26,8 +33,9 @@ def clothing(money):
         if Response.upper() == 'SR':
             money = money - 20
         
-        
-        print('You have', money, 'gold coins left.')
+        print()
+        print()
+        print('You have', money, 'gold coins left. Come again soon.')
         return money
 
     def conversation():
@@ -38,7 +46,9 @@ def clothing(money):
     def Exit():
         return 
 
-    print('Welcome to the Clothing shop!')
+    print()
+    print()
+    print(Fore.MAGENTA + 'Welcome to the Clothing shop!')
     print('B --> Buy Clothing'
           '\n'
           'C --> Conversation'
@@ -65,12 +75,15 @@ def clothing(money):
 
 
 def pet_shop(money):
-    def buy_pets(money):
+    def buy_pets(money):  
         print('D >> Dog - 150gc')
         print('BP >> Baby Pig - 150gc')
         print('C >> Cat - 150gc')
 
+        print()
         Response = input('What do you want to buy?  ')
+        print()
+        print()
        
         if Response.upper() == 'D':
             money = money - 150
@@ -82,12 +95,15 @@ def pet_shop(money):
             money = money - 150
         
         
-        print('You have', money, 'gold coins left.')
+        print('You have', money, 'gold coins left. Thank you for shopping with us!!')
         return money
 
 
 
-    print('Welcome to the Pet shop!')
+
+    print()
+    print()
+    print(Fore.BLUE + 'Welcome to the Pet shop!')
     print('B --> Buy Pets'
           '\n'
           'C --> Conversation'
@@ -96,6 +112,9 @@ def pet_shop(money):
           '\n')
 
     response = input('What will you do? ')
+    print()
+    print()
+
 
 
     buy_pets(money)
