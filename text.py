@@ -6,22 +6,28 @@ intro_text_2 = 'There are legends of old told by the elders in my village about 
 
 Chap1_text_1 = 'You walk into the frost covered village.' + '\n' + '\n' + 'There are two shops in the village, the clothing shop and the pet shop.'
 
-
-
 Chap1_text_2 = 'Now that you have finished shopping you can start your adventure.'
 
 
 Chap2_text_1 = 'You were about to leave the village with your new found pet when a quaint little tavern caught your eye.'
 
-
-
 Chap2_text_2 = 'As you enter what you thought was a tavern you soon come to realize that it\'s actually an underground casino...'
 
-Chap2_text_3 = 'You start to look around and see that everyone is looking at you quizzically. Deciding to ignore the stares you walk up to the barmaid and ask to bid in.'
+Chap2_text_3 = 'You start to look around and see that everyone is looking at you quizzically. Deciding to ignore the stares you start to walk up to the barmaid and ask to bid in.'
+
+Chap2_text_4 = 'As you walked through the tavern a man stops you and says:'
+
+('Look I\'m not sure where you\'re from but in this village to enter the bet you need to have at least 1,000 gold coins to gamble. So just leave. ')
+
+('I don\'t know about gold coins but I do have this.')
+
+('You take out the platinum coin and show it to him.')
 
 ('Where did you get this coin?')
 
 ('My father gave it to me.')
+
+#############END OF CHAPTER 2#############
 
 ('Do you know what this is?')
 

@@ -130,7 +130,52 @@ print()
 input(Fore.WHITE +'click enter to continue')
 print()
 
+print(Fore.Green + text.Chap2_text_3
+)
+
+print()
+
+print(text.Chap2_text_4)
+print()
+print()
 
 
+print(Fore.YELLOW + 'Look I\'m not sure where you\'re from but in this village to enter the bet you need to have at least 1,000 gold coins to gamble. So just leave. ')
+
+print(Fore.BLUE + 'I don\'t know about gold coins but I do have this.')
+
+print(Fore.GREEN + 'You take out the platinum coin and show it to him.')
+
+print(Fore.YELLOW + 'Where did you get this coin?')
+
+print(Fore.BLUE + 'My father gave it to me.')
+
+print()
+print()
+print()
+
+print(Fore.RED + 'END OF CHAPTER 2')
+input('Click enter to continue to chapter 3')            
+system('clear')
+
+#############END OF CHAPTER 2#############
+
+print(Fore.RED + 'CHAPTER 3')
+print()
+print()
+
+
+
+('Do you know what this is?')
+
+('I always thought it was just a normal coin')
+
+('You need to come with me')
+
+('Seeing as you have nothing better to do you follow him')
+
+('Where are we going?')
+
+('You\'ll see')
 
 print(Style.RESET_ALL) # Reset Style after finished.
